@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ChainTech Network</title>
+</head>
+<body>
+
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Welcome to ChainTech Network</h2>
+  <h1>Dynamic API Call Example</h1>
+
+    <div id="output"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Fetch data from the JSONPlaceholder API
+            fetch('http://127.0.0.1:8003/CHAIN/dynamic/dynamic')
+                .then(response => response.json())
+                .then(data => {
+                    // Display the data in the 'output' div
+                    document.getElementById('output').innerHTML = `
+                        <p>timestamp: ${data.timestamp}</p>
+                        <p>quotes: ${data.quotes}</p>
+                        <p>weather: ${data.weather.weather[0]["main"]}</p>
+                        <p>temperature: ${data.weather.main.temp}</p>
+                        <p>pressure: ${data.weather.main.pressure}</p>
+                        <p>humidity: ${data.weather.main.humidity}</p>
+                        <p>country: ${data.weather.sys.country}</p>
+                        <p>city: ${data.weather.name}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    document.getElementById('output').innerHTML = '<p>Error fetching data</p>';
+                });
+        });
+    </script>
+   
+</main>
+
+<footer>
+  <p>Contact Information:</p>
+  <p>Email:  ChainTech@email.com</p>
+  <p>Phone:  9875674561</p>
+</footer>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,39 @@
+<!-- user_data_form.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Data Form</title>
+</head>
+<body>
+    <h2>User Data Form</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        
+        <!-- Display form errors, if any -->
+        {% if form.errors %}
+            <p style="color: red;">Please correct the errors below:</p>
+        {% endif %}
+
+        <!-- Display form fields -->
+        <label for="{{ form.name.id_for_label }}">Name:</label>
+        {{ form.name }}
+        {% if form.name.errors %}
+            <p style="color: red;">{{ form.name.errors.0 }}</p>
+        {% endif %}
+
+        <br>
+
+        <label for="{{ form.email.id_for_label }}">Email:</label>
+        {{ form.email }}
+        {% if form.email.errors %}
+            <p style="color: red;">{{ form.email.errors.0 }}</p>
+        {% endif %}
+
+        <br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

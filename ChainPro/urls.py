@@ -28,5 +28,6 @@ router.register(r'dynamic',DynamicViewSet , basename= 'get')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('CHAIN/', include(router.urls)),
-    path('ChainTEMP' , views.index )
+    path('ChainTEMP' , views.index ),
+    path('ChainForm' , views.form )
 ]

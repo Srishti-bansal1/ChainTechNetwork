@@ -18,7 +18,7 @@ class ChainViewSet(viewsets.ModelViewSet):
     def getCustom(self, request):
         queryset = ChainModel.objects.all()
         serializer = ChainSerializer(queryset,many=True) 
-        return render(serializer.data, 'userDataForm.html')
+        return Response(serializer.data)
     
     @action(detail=False, methods=["POST"],url_path='add_create')
     def Add_created(self, request):
@@ -43,9 +43,6 @@ def index(request):
     return render(request, 'ChainTemp.html', {'index': index})
 
 
-
-
-
 class DynamicViewSet(viewsets.GenericViewSet):
     serializer_class = DynamicSerializer
     
@@ -55,4 +52,9 @@ class DynamicViewSet(viewsets.GenericViewSet):
         serializer = DynamicSerializer(dynamicData) 
         print(serializer.data)
         return Response(serializer.data)
+    
+@api_view(['GET'])   
+def form(request):
+    return render(request, 'userDataForm.html', {'form': form})
+
 

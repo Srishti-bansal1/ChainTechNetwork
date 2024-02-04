@@ -26,7 +26,7 @@ class ChainViewSet(viewsets.ModelViewSet):
         serializer = ChainSerializer(data = request.data)
         
         if ChainModel.objects.filter(**dataReceived).exists():
-            return Response(status=status.HTTP_403_FORBIDDEN)
+            raise Exception("Duplicate Data")
 
         if serializer.is_valid():
             serializer.save()

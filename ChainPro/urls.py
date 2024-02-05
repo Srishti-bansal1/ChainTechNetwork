@@ -29,5 +29,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('CHAIN/', include(router.urls)),
     path('ChainTEMP' , views.index ),
-    path('ChainForm' , views.form )
+    path('ChainForm' , views.form ),
+    path('ChainTable' , views.table )
 ]

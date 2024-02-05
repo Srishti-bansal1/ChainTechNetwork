@@ -1,8 +1,8 @@
 from django.shortcuts import render
 
 from ChainApp.dynamicData import DynamicData
-from .models import ChainModel
-from .serializer import ChainSerializer, DynamicSerializer
+from .models import ChainModel ,DataTable
+from .serializer import ChainSerializer, DynamicSerializer , dataSerializer
 from rest_framework import response , viewsets ,status
 from rest_framework.decorators import action , api_view
 from rest_framework.response import Response
@@ -56,5 +56,9 @@ class DynamicViewSet(viewsets.GenericViewSet):
 @api_view(['GET'])   
 def form(request):
     return render(request, 'userDataForm.html', {'form': form})
+
+@api_view(['GET'])   
+def table(request):
+    return render(request, 'dataTable.html', {'table': table})
 
 

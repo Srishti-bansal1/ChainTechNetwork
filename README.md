@@ -17,13 +17,17 @@ To rendered the current Date-Time , weather information and random quotes ` CHAI
 
 <br>
 # SetUp for Linux or MAC <br>
+<<<<<<< HEAD
 step 1 : open terminal and clone the code by executing  `git clone <https://github.com/Srishti-bansal1/ChainTechNetwork.git> `
+=======
+step 1 : open terminal and clone the code by executing `git clone <https://github.com/Srishti-bansal1>`
+>>>>>>> dc712ab09d30208ad244e0826b0fee7119fc1e98
 <br>
 step 2 : Install virtual environment  with command : `pip install virtualenv`
 <br>
 step 3 : Activate the virtual environment with command :`source  .venv/bin/activate`
 <br>
-step 4 : Move in projct file with command : `cd ChainPro`
+step 4 : Move in projct file with command :`cd ChainPro`
 <br>
 step 5 : Execute migration command to create table in database using command : python mange.py migrate
 <br>

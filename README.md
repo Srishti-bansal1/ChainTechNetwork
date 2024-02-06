@@ -1,10 +1,9 @@
 # ChainTech Network
-        ~ http://127.0.0.1:8003/ChainTEMP ~ clicked on it to go my project interface.
+`http://127.0.0.1:8003/ChainTEMP`  clicked on it to go my project interface.
 
 # Introduction <br>
        This is a 'User Login' project . In this project I used python language (version 3.9 ) & Django Rest framework (version 4.2.9) for backend and HTML & JavaScript for frondend development . This project used to enrolled the user , read the user information. 
-<br>
-       In this project , I created 3 HTML pages . 1st is ChainTemp where I'm rendering the current Date-Time , weather information and random quotes .`http://127.0.0.1:8003/ChainTEMP` <br> 2nd is UserDataForm , this page is navigating to 1st page where user enter our details  `http://127.0.0.1:8003/ChainForm` and this page is also connected with <br> 3rd page which is dataTable where we will get user details `http://127.0.0.1:8003/ChainTable`  and we can also navigate 1st page to 3rd page . <br>
+<br> In this project , I created 3 HTML pages . 1st is ChainTemp where I'm rendering the current Date-Time , weather information and random quotes . `http://127.0.0.1:8003/ChainTEMP` <br> 2nd is UserDataForm , this page is navigating to 1st page where user enter our details  `http://127.0.0.1:8003/ChainForm` and this page is also connected with <br> 3rd page which is dataTable where we will get user details `http://127.0.0.1:8003/ChainTable`  and we can also navigate 1st page to 3rd page . <br>
 
        In this project , I Designed a model and their fields are name , email. Migrated the model to create a Table. Connected with MYSQL database. Created APIs for Create and Read operation. 
  <br>

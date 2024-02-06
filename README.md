@@ -17,11 +17,7 @@ To rendered the current Date-Time , weather information and random quotes ` CHAI
 
 <br>
 # SetUp for Linux or MAC <br>
-<<<<<<< HEAD
 step 1 : open terminal and clone the code by executing  `git clone <https://github.com/Srishti-bansal1/ChainTechNetwork.git> `
-=======
-step 1 : open terminal and clone the code by executing `git clone <https://github.com/Srishti-bansal1>`
->>>>>>> dc712ab09d30208ad244e0826b0fee7119fc1e98
 <br>
 step 2 : Install virtual environment  with command : `pip install virtualenv`
 <br>

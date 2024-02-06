@@ -5,8 +5,7 @@
 
 This is a User Login project . In this project I used python language (version 3.9 ) & Django Rest framework (version 4.2.9) for backend and HTML & JavaScript for frondend development. This project used to enrolled the user, read the user information.
 
-In this project, I created 3 HTML pages. 1st is ChainTemp where I'm rendering the current Date-Time, weather information and random quotes. 
-`http://127.0.0.1:8003/ChainTEMP` 
+In this project, I created 3 HTML pages. 1st is ChainTemp where I'm rendering the current Date-Time, weather information and random quotes. `http://127.0.0.1:8003/ChainTEMP` 
 2nd is UserDataForm, this page is navigating to 1st page where user enter our details  
 `http://127.0.0.1:8003/ChainForm` and this page is also connected with 3rd page which is dataTable where we will get user details `http://127.0.0.1:8003/ChainTable`  and we can also navigate 1st page to 3rd page . <br>
 
@@ -17,15 +16,15 @@ To rendered the current Date-Time , weather information and random quotes ` CHAI
 
 <br>
 # SetUp for Linux or MAC <br>
-step 1 : open terminal and clone the code by executing  `git clone <https://github.com/Srishti-bansal1/ChainTechNetwork.git> `
+step 1 : open terminal and clone the code by executing  git clone https://github.com/Srishti-bansal1/ChainTechNetwork.git
 <br>
-step 2 : Install virtual environment  with command : `pip install virtualenv`
+step 2 : Install virtual environment  with command : pip install virtualenv
 <br>
-step 3 : Activate the virtual environment with command :`source  .venv/bin/activate`
+step 3 : Activate the virtual environment with command : source .venv/bin/activate
 <br>
-step 4 : Move in projct file with command :`cd ChainPro`
+step 4 : Move in projct file with command : cd ChainPro
 <br>
-step 5 : Execute migration command to create table in database using command : python mange.py migrate
+step 5 : Execute migration command to create table in database using command : `python mange.py migrate`
 <br>
 step 6 : Run the server with command : python manage.py runserver 8003
 <br> 

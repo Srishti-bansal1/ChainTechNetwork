@@ -18,11 +18,11 @@ To rendered the current Date-Time , weather information and random quotes ` CHAI
 
 <br>
 # SetUp for Linux or MAC <br>
-step 1 : open terminal and clone the code by executing  `git clone <https://github.com/Srishti-bansal1/Registration.git> `
+step 1 : open terminal and clone the code by executing  `git clone https://github.com/Srishti-bansal1/Registration.git `
 <br>
-step 2 : Install virtual environment  with command : `pip install virtualenv`
+step 2 : Install virtual environment  with command :  `pip install virtualenv`
 <br>
-step 3 : Activate the virtual environment with command : `source  .venv/bin/activate`
+step 3 : Activate the virtual environment with command :`source  .venv/bin/activate`
 <br>
 step 4 : Move in projct file with command : `cd ChainPro`
 <br>
@@ -32,7 +32,7 @@ step 6 : Run the server with command : python manage.py runserver 8003
 <br> 
 
 # API Documentation -<br>
-        1. Create :- End point - `CHAIN/chain/add_create`
+        1. Create :- End point - CHAIN/chain/add_create
 
                     request body - {	
                                         "name"   : <str> ,
@@ -44,7 +44,7 @@ step 6 : Run the server with command : python manage.py runserver 8003
                                         "email"  : <str>,
                                     }
 
-        2. Read :- End point - `CHAIN/chain/show`
+        2. Read :- End point - CHAIN/chain/show
         
                     response body - {	
                                         "id "    : <int>,
@@ -53,15 +53,15 @@ step 6 : Run the server with command : python manage.py runserver 8003
                                     }
 
 # HTML Documentation - <br>
-        1. Front page :- End point - `http://127.0.0.1:8003/ChainTEMP`
+        1. Front page :-   End point - http://127.0.0.1:8003/ChainTEMP
 
                         response body - <HTML page>       
 
-        2. Create user :-  End point - `http://127.0.0.1:8003/ChainForm`  
+        2. Create user :-  End point - http://127.0.0.1:8003/ChainForm
 
                         response body - <HTML page>
 
-        3. User table :-   End point - `http://127.0.0.1:8003/ChainTable`
+        3. User table :-   End point - http://127.0.0.1:8003/ChainTable
 
                         response body - <HTML page>
                            	

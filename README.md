@@ -2,7 +2,8 @@
 `http://127.0.0.1:8003/ChainTEMP`  clicked on it to go my project interface.
 
 # Introduction <br>
-       This is a 'User Login' project . In this project I used python language (version 3.9 ) & Django Rest framework (version 4.2.9) for backend and HTML & JavaScript for frondend development .
+       This is a 'User Login' project . In this project I used python language (version 3.9 ) & 
+Django Rest framework (version 4.2.9) for backend and HTML & JavaScript for frondend development .
 This project used to enrolled the user , read the user information.
 
 In this project , I created 3 HTML pages . 1st is ChainTemp where I'm rendering the current Date-Time , weather information and random quotes. 
@@ -17,7 +18,7 @@ To rendered the current Date-Time , weather information and random quotes ` CHAI
 
 <br>
 # SetUp for Linux or MAC <br>
-step 1 : open terminal and clone the code by executing `git clone <https://github.com/Srishti-bansal1/Registration.git>`
+step 1 : open terminal and clone the code by executing  `git clone <https://github.com/Srishti-bansal1/Registration.git> `
 <br>
 step 2 : Install virtual environment  with command : `pip install virtualenv`
 <br>

@@ -24,7 +24,7 @@ class DynamicData:
         return  quote
 
     def get_weather(self):
-        weather_api_url = "https://api.openweathermap.org/data/2.5/weather?lat=12.971599&lon=77.594566&appid=<api_key>"
+        weather_api_url = "https://api.openweathermap.org/data/2.5/weather?lat=12.971599&lon=77.594566&appid=ff9e335caf44a838adff7eb19b448759"
         weather = requests.get(weather_api_url)
         data = weather.json()
         return data

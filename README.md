@@ -14,6 +14,17 @@ In this project , I Designed a model and their fields are name , email. Migrated
  <br>
 `CHAIN/chain/show` use for read <br> `CHAIN/chain/add_create` use for create <br>
 To rendered the current Date-Time , weather information and random quotes ` CHAIN/dynamic/dynamic`.
+<br>
+Exercise 1: Setting Up a Simple Web Page 
+<br>
+Exercise 2: Creating a Python Web Server  http://127.0.0.1:8003/ChainTEMP
+<br>
+Exercise 3: Adding Dynamic Content  http://127.0.0.1:8003/CHAIN/dynamic/dynamic
+<br>
+Exercise 4: Form Handling   http://127.0.0.1:8003/ChainForm
+<br>
+Exercise 5: Data Persistence  http://127.0.0.1:8003/ChainTable
+
 
 <br>
 # SetUp for Linux or MAC <br>
@@ -21,13 +32,15 @@ step 1 : open terminal and clone the code by executing  `git clone <https://gith
 <br>
 step 2 : Install virtual environment  with command : `pip install virtualenv`
 <br>
-step 3 : Activate the virtual environment with command :`source  .venv/bin/activate`
+step 3 : Create virtual environment  with command : ` virtualenv .venv`
 <br>
-step 4 : Move in projct file with command :`cd ChainPro`
+step 4 : Activate the virtual environment with command :`source  .venv/bin/activate`
 <br>
-step 5 : Execute migration command to create table in database using command : python mange.py migrate
+step 5 : Move in projct file with command :`cd ChainPro`
 <br>
-step 6 : Run the server with command : python manage.py runserver 8003
+step 6 : Execute migration command to create table in database using command : python mange.py migrate
+<br>
+step 7 : Run the server with command : python manage.py runserver 8003
 <br> 
 
 # API Documentation -<br>

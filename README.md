@@ -43,7 +43,7 @@ step 7 : Run the server with command : python manage.py runserver 8003
 <br> 
 
 # API Documentation -<br>
-        1. Create :- End point - CHAIN/chain/add_create
+        1. Create :- End point -  http://127.0.0.1:8003/CHAIN/chain/add_create
 
                     request body - {	
                                         "name"   : <str> ,
@@ -55,7 +55,7 @@ step 7 : Run the server with command : python manage.py runserver 8003
                                         "email"  : <str>,
                                     }
 
-        2. Read :- End point - CHAIN/chain/show
+        2. Read :- End point - http://127.0.0.1:8003/CHAIN/chain/show
         
                     response body - {	
                                         "id "    : <int>,

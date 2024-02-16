@@ -1,6 +1,8 @@
 # ChainTech Network
 `http://127.0.0.1:8003/ChainTEMP`  clicked on it to go my project interface.
 
+swagger link - `http://127.0.0.1:8003/swagger/`
+
 # Introduction <br>
 
 This is a User Login project . In this project I used python language (version 3.9 ) & Django Rest framework (version 4.2.9) for backend and HTML & JavaScript for frondend development. This project used to enrolled the user, read the user information.
@@ -43,7 +45,7 @@ step 7 : Run the server with command : python manage.py runserver 8003
 <br> 
 
 # API Documentation -<br>
-        1. Create :- End point - CHAIN/chain/add_create
+        1. Create :- End point -  http://127.0.0.1:8003/CHAIN/chain/add_create
 
                     request body - {	
                                         "name"   : <str> ,
@@ -55,7 +57,7 @@ step 7 : Run the server with command : python manage.py runserver 8003
                                         "email"  : <str>,
                                     }
 
-        2. Read :- End point - CHAIN/chain/show
+        2. Read :- End point - http://127.0.0.1:8003/CHAIN/chain/show
         
                     response body - {	
                                         "id "    : <int>,

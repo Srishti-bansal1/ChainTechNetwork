@@ -39,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ChainApp',
-    'django_extensions'
-
+    'django_extensions',
+     'drf_yasg',
 ]
 
 MIDDLEWARE = [

@@ -20,6 +20,24 @@ from ChainApp.views import ChainViewSet, DynamicViewSet
 from rest_framework.routers import DefaultRouter
 from ChainApp import views
 
+from rest_framework import permissions
+from drf_yasg.views import get_schema_view
+from drf_yasg import openapi
+
+schema_view = get_schema_view(
+   openapi.Info(
+      title="API Docs Dynamic Data",
+      default_version='v1',
+      description="Render Dynamic Data",
+      terms_of_service="https://www.google.com/policies/terms/",
+      contact=openapi.Contact(email="contact@xyz.local"),
+      license=openapi.License(name="BSD License"),
+   ),
+   public=True,
+   permission_classes=(permissions.AllowAny,),
+)
+
+
 router = DefaultRouter(trailing_slash=False)
 router.register(r'chain',ChainViewSet , basename= 'chain')
 router.register(r'dynamic',DynamicViewSet , basename= 'get')
@@ -30,5 +48,7 @@ urlpatterns = [
     path('CHAIN/', include(router.urls)),
     path('ChainTEMP' , views.index ),
     path('ChainForm' , views.form ),
-    path('ChainTable' , views.table )
+    path('ChainTable' , views.table ),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+
 ]
